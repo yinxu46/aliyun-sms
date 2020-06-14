@@ -1,0 +1,32 @@
+{
+    "name": "yinxu46/aliyun-sms",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "yinxu46",
+            "email": "yinxu46@qq.com"
+        }
+    ],
+     "autoload": {
+        "psr-4": {
+            "aliyun\\sms\\": "src/"
+        },
+       "files": [
+         "src/helper.php"
+       ]
+    },
+    "extra": {
+        "think": {
+        }
+    },
+     "require": {
+        "php": ">=7.1.0",
+        "topthink/framework": "^6.0",
+        "topthink/think-helper": "^3.0.0"
+    },
+  "scripts" : {
+    "post-install-cmd": [
+      "php think sms:config"
+    ]
+  }
+}
